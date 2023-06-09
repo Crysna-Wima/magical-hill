@@ -370,246 +370,94 @@
 				display:none
 			}
 			.svg {
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				top: 0;
-				margin: auto;
-				
-				&--rays {
-					width: 100%;
-					height: 100%;
-				}
-				&--bird {
-					top: -60px;
-					left: -30px;
-					width: 280px;
-					height: 280px;
-				}
-			}
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    
+    &--rays {
+        width: 100%;
+        height: 100%;
+    }
+    &--bird {
+        top: -60px;
+        left: -30px;
+        width: 280px;
+        height: 280px;
+    }
+}
 
-			.stop-color {
-				stop-color: crimson;
-				animation: colors 3s linear infinite;
-				
-				&--2 {
-					animation-delay: -1s;
-				}
-				&--3 {
-					animation-delay: -.5s;
-				}
-				&--4 {
-					animation-delay: -2s;
-				}
-				&--5 {
-					animation-delay: -2.5s;
-				}
-				&--6 {
-					animation-delay: -1.5s;
-				}
-			}
+.stop-color {
+    stop-color: crimson;
+    animation: colors 3s linear infinite;
+    
+    &--2 {
+        animation-delay: -1s;
+    }
+    &--3 {
+        animation-delay: -.5s;
+    }
+    &--4 {
+        animation-delay: -2s;
+    }
+    &--5 {
+        animation-delay: -2.5s;
+    }
+    &--6 {
+        animation-delay: -1.5s;
+    }
+}
 
-			@keyframes colors {
-				0% {
-					stop-color: maroon;
-				}
-				10% {
-					stop-color: crimson;
-				}
-				20% {
-					stop-color: orangered;
-				}
-				30% {
-					stop-color: gold;
-				}
-				40% {
-					stop-color: yellowgreen;
-				}
-				50% {
-					stop-color: skyblue;
-				}
-				60% {
-					stop-color: steelblue;
-				}
-				70% {
-					stop-color: slateblue;
-				}
-				80% {
-					stop-color: darkviolet;
-				}
-				90% {
-					stop-color: purple;
-				}
-			}
+@keyframes colors {
+    0% {
+        stop-color: maroon;
+    }
+    10% {
+        stop-color: crimson;
+    }
+    20% {
+        stop-color: orangered;
+    }
+    30% {
+        stop-color: gold;
+    }
+    40% {
+        stop-color: yellowgreen;
+    }
+    50% {
+        stop-color: skyblue;
+    }
+    60% {
+        stop-color: steelblue;
+    }
+    70% {
+        stop-color: slateblue;
+    }
+    80% {
+        stop-color: darkviolet;
+    }
+    90% {
+        stop-color: purple;
+    }
+}
 
-			.svg--bird {
-				animation: up-down 1.68s infinite ease-out;
-			}
+.svg--bird {
+    animation: up-down 1.68s infinite ease-out;
+}
 
-			@keyframes up-down {
-				50% {
-					transform: translate(0, 30px);
-				}
-			}
+@keyframes up-down {
+    50% {
+        transform: translate(0, 30px);
+    }
+}
 
-			@keyframes rotate {
-				100% {
-					transform: rotate(360deg);
-				}
-			}
-
-			.owl-div{
-				z-index: 20;
-				position: absolute;
-				margin-top: 60%;
-			}
-
-			.branch {
-			background-color: #fc7753;
-			height: 5px;
-			width: 50px;
-			border-radius: 0 15px 15px 0;
-			position: absolute;
-			top: 260px;
-			z-index: 1;
-			}
-			.owl {
-			position: relative;
-			background-color: #cfae69;
-			height: 55px;
-			width: 40px;
-			border-radius: 120px;
-			top: 215px;
-			left: 5px;
-			}
-			.ear-l,
-			.ear-r {
-			height: 0;
-			width: 0;
-			border-bottom: 33px solid #a6813b;
-			border-right: 15px solid transparent;
-			border-left: 15px solid transparent;
-			position: relative;
-			z-index: -2;
-			}
-			.ear-l {
-			bottom: 5px;
-			left: -5px;
-			transform: rotate(-20deg);
-			-webkit-transform: rotate(-20deg);
-			}
-			.ear-r {
-			bottom: 37px;
-			left: 16px;
-			transform: rotate(20deg);
-			-webkit-transform: rotate(20deg);
-			}
-			.eye-l,
-			.eye-r {
-			height: 11px;
-			width: 11px;
-			background-color: #a6813b;
-			border-radius: 50%;
-			position: relative;
-			overflow: hidden;
-			}
-			.eye-l:before,
-			.eye-r:before {
-			content: "";
-			position: absolute;
-			height: 30px;
-			width: 30px;
-			border-radius: 50%;
-			left: 0.5px;
-			top: 0.5px;
-			background-color: white;
-			}
-			.eye-l {
-			bottom: 135px;
-			left: 6px;
-			}
-			.eye-r {
-			bottom: 146px;
-			left: 21px;
-			}
-			.eyeball {
-			height: 5px;
-			width: 5px;
-			background-color: #424142;
-			border-radius: 50%;
-			position: absolute;
-			top: 4px;
-			left: 3px;
-			}
-			.eyelid {
-			height: 10px;
-			width: 15px;
-			background-color: #a6813b;
-			position: relative;
-			bottom: 4px;
-			right: 0px;
-			animation: blink 2s infinite;
-			-webkit-animation: blink 2s infinite;
-			}
-			@keyframes blink {
-			30% {
-				transform: translateY(5px);
-			}
-			}
-			@-webkit-keyframes blink {
-			30% {
-				-webkit-transform: translateY(5px);
-			}
-			}
-			.wing-l,
-			.wing-r {
-			height: 40px;
-			width: 7px;
-			background-color: #a6813b;
-			position: relative;
-			z-index: 2;
-			}
-			.wing-l {
-			right: 3px;
-			top: -45px;
-			border-radius: 20px 0;
-			}
-			.wing-r {
-			border-radius: 0 20px;
-			bottom: 88px;
-			left: 37px;
-			}
-			.beak {
-			width: 0;
-			height: 0;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			border-top: 6px solid #ffcc30;
-			border-radius: 50%;
-			position: relative;
-			bottom: 145px;
-			left: 14.5px;
-			}
-			.leg-r,
-			.leg-l {
-			background-color: #ffcc30;
-			height: 4px;
-			width: 9px;
-			border-radius: 8px;
-			position: relative;
-			z-index: 2;
-			}
-
-			.leg-l {
-			bottom: 132px;
-			left: 8px;
-			}
-			.leg-r {
-			bottom: 135px;
-			left: 23px;
-			}
-
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 		</style>
 	</head>
 	<body>
@@ -625,29 +473,6 @@
 
 			<!-- Tree -->
 			<img src="image/tree3-01.png" alt="" id="tree" />
-
-			<div class="owl-div">
-				<div class="branch">
-					<div></div>
-				</div>
-				<div class="owl">
-					<div class="ear-l"></div>
-					<div class="ear-r"></div>
-					<div class="wing-l"></div>
-					<div class="wing-r"></div>
-					<div class="eye-l">
-						<div class="eyeball"></div>
-						<div class="eyelid"></div>
-					</div>
-					<div class="eye-r">
-						<div class="eyeball"></div>
-						<div class="eyelid"></div>
-					</div>
-					<div class="beak"></div>
-					<div class="leg-l"></div>
-					<div class="leg-r"></div>
-				</div>
-			</div>
 			
 			<svg viewBox="0 0 2000 2000" class="svg svg--bird" id="tree2">
 				<defs>
